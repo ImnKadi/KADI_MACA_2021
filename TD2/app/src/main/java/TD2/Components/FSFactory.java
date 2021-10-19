@@ -1,7 +1,18 @@
 package TD2.Components;
 
-public class FSFactory {
+public final class FSFactory {
 
-    FSFactory instance = null;
+    public static final FSFactory INSTANCE = new FSFactory();
+
+
+    public static FSFactory getInstance(){
+        return INSTANCE;
+    }
+
+
+
+
+
+
 
 }

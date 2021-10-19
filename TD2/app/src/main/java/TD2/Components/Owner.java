@@ -4,7 +4,7 @@ package TD2.Components;
 import java.util.Objects;
 
 public class Owner {
-    private String name;
+    final private String name;
 
 
     public Owner(String name) {
