@@ -30,6 +30,7 @@ public class Repertoire extends ComposantImpl implements Composant, Composite<Co
     @Override
     public void addChild(Composant composant) {
         this.getChildren.add(composant);
+
     }
 
     @Override
