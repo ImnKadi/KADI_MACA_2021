@@ -1,5 +1,10 @@
 package TD3.visitors;
 
+import TD3.commandes.Client;
+import TD3.commandes.Commande;
+import TD3.commandes.GroupeClient;
+import TD3.commandes.Ligne;
+
 public class XMLRapportCommandes implements PrePostVisitor{
     @Override
     public void preVisit(GroupeClient gc) {
@@ -33,6 +38,11 @@ public class XMLRapportCommandes implements PrePostVisitor{
 
     @Override
     public void postVisit(Ligne l) {
+
+    }
+
+    @Override
+    public void visit(GroupeClient groupeClient) {
 
     }
 }

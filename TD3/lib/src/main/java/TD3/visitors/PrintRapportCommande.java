@@ -1,6 +1,11 @@
 package TD3.visitors;
 
-public class PrintRapportCommande implements Visitor{
+import TD3.commandes.Client;
+import TD3.commandes.Commande;
+import TD3.commandes.GroupeClient;
+import TD3.commandes.Ligne;
+
+public class PrintRapportCommande implements Visitor {
     @Override
     public void visit(GroupeClient gc) {
 

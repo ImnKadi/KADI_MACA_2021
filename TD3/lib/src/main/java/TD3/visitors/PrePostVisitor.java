@@ -1,5 +1,10 @@
 package TD3.visitors;
 
+import TD3.commandes.Client;
+import TD3.commandes.Commande;
+import TD3.commandes.GroupeClient;
+import TD3.commandes.Ligne;
+
 public interface PrePostVisitor extends AbstractVisitor {
 
     public void preVisit(GroupeClient gc);
@@ -11,6 +16,5 @@ public interface PrePostVisitor extends AbstractVisitor {
     public void postVisit(Ligne l);
 
 
-
-
+    void visit(GroupeClient groupeClient);
 }
