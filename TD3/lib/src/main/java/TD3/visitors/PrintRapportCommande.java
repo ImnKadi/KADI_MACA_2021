@@ -6,23 +6,24 @@ import TD3.commandes.GroupeClient;
 import TD3.commandes.Ligne;
 
 public class PrintRapportCommande implements Visitor {
+
     @Override
     public void visit(GroupeClient gc) {
 
     }
 
     @Override
-    public void visit(Client c) {
+    public void visit(Ligne c) {
 
     }
 
     @Override
-    public void visit(Commande cm) {
+    public void visit(Client co) {
 
     }
 
     @Override
-    public void visit(Ligne l) {
+    public void visitt(Ligne l) {
 
     }
 }
